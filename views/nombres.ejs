@@ -1,0 +1,46 @@
+<html> 
+<head> 
+<title>Nombre</title> 
+<h1>Tu nombre es</h1> 
+
+<script>
+  function sumar() { 
+var n1 = (document.miFormulario.nombre1.value); 
+var n2 = (document.miFormulario.nombre2.value); 
+
+
+document.miFormulario.Nombre.value=n1 + " " + n2 ; 
+} 
+</script>
+<head>
+    <body>
+              <div align="justify">  
+              <form name="miFormulario"> 
+              <tr> 
+              <td> 
+              <label>Nombre </label> 
+              <input type="text" name="nombre1" size="20"> 
+              <br> 
+              <label>Apellido </label> 
+              <input type="text" name="nombre2" size="20"> 
+              </td> 
+              </tr> 
+              <tr> 
+              <td align="right"> <br><br>
+              <label>Tu nombre es: </label>
+              <input type="text" name="Nombre" size="20" disabled> 
+              </td> 
+              </tr> 
+              <tr> 
+              <td align="center"> 
+              <input type="button" value="enter" onclick="sumar()">
+              
+              <td align="center"> 
+              </td> 
+              </tr> 
+              </form> 
+              </div>
+              </body> 
+              </html>
+    </body>
+</head>
